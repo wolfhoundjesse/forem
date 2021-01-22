@@ -1,3 +1,4 @@
+**/libv8*
 .buildkite/
 .codeclimate.yml
 .dockerignore
