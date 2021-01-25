@@ -42,6 +42,11 @@ Sidekiq.configure_server do |config|
 
   config.server_middleware do |chain|
     chain.add Sidekiq::HoneycombMiddleware
+    chain.add SidekiqUniqueJobs::Middleware::Server
+  end
+
+  config.client_middleware do |chain|
+    chain.add SidekiqUniqueJobs::Middleware::Client
   end
 
   # This allows us to define custom logic to handle when a worker has exhausted all
