@@ -6,6 +6,7 @@ items:
   - integration-tests.md
   - unit-functional-tests.md
   - frontend-tests.md
+  - end-to-end-tests.md
   - accessibility-tests.md
   - regression-tests.md
   - code-coverage.md
